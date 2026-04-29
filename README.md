@@ -17,8 +17,7 @@ your image:
 
 * `:stable`, `:VERSION-stable`: Provides a gcloud installation
 with `bq` components. The image is built upon the latest
-[Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 13 base image. This image supports both `linux/amd` and `linux/arm`
+Debian (`trixie-slim`) base image. This image supports both `linux/amd` and `linux/arm`
 platforms. To install specific gcloud versions, use
 the `:VERSION-stable` tag.
 
@@ -31,41 +30,35 @@ base image. This image supports both `linux/amd` and `linux/arm` platforms. To
 install specific gcloud versions, use the `:VERSION-alpine` tag.
 
 If you want images with additional
-[components](#components_installed_in_each_tag) or packages pre-installed,
+components or packages pre-installed,
 you can install one of the following options:
 
 * `:emulators`, `:VERSION-emulators`: Similar to stable, with the
-addition of all the emulator components. The image is build upon the latest
-[Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 13 base image and uses component manager to install the components. This
+addition of all the emulator components. The image is built upon the latest
+Debian (`trixie-slim`) base image and uses component manager to install the components. This
 image supports both `linux/amd` and `linux/arm` platforms. To install specific
 gcloud versions, use the `:VERSION-emulators`
 tag.
 
 * `:latest`, `:VERSION`: Similar to stable, with additional components
-(List of components installed in the image are listed
-[below](#components_installed_in_each_tag)) pre-installed. The image is build
+pre-installed. The image is built
 upon the latest
-[Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 13 base image and uses deb packages to install the components. This image supports both `linux/amd` and `linux/arm` platforms.
+Debian (`trixie-slim`) base image and uses deb packages to install the components. This image supports both `linux/amd` and `linux/arm` platforms.
 To install specific gcloud versions, use the `:VERSION` tag.
 
 * `:slim`, `:VERSION-slim`: Similar to stable but includes the additional
 third party packages like `curl`, `python3-crcmod`, `apt-transport-https`,
 `lsb-release`, `openssh-client`, `git`, `make`, and `gnupg`. This image is
 built upon the latest
-[Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 13 base image. This image supports both `linux/amd` and `linux/arm`
+Debian (`trixie-slim`) base image. This image supports both `linux/amd` and `linux/arm`
 platforms. To install specific gcloud versions, use
 the `:VERSION-slim` tag.
 
 * `:debian_component_based`, `:VERSION-debian_component_based`: Similar to
 stable, with additional components
-(List of components installed in the image are listed
-[below](#components_installed_in_each_tag)) pre-installed. The image is build
+pre-installed. The image is built
 upon the latest
-[Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 13 base image and uses component manager to install the components. This
+Debian (`trixie-slim`) base image and uses component manager to install the components. This
 image supports both `linux/amd` and `linux/arm` platforms. To install specific
 gcloud versions, use the `:VERSION-debian_component_based` tag.
 
@@ -83,13 +76,13 @@ using the `us.gcr.io`, `eu.gcr.io`, and `asia.gcr.io` repositories.
   by running the following command:
 
   ```none
-  docker pull gcr.io/google.com/cloudsdktool/google-cloud-cli:489.0.0-stable
+  docker pull gcr.io/google.com/cloudsdktool/google-cloud-cli:566.0.0-stable
   ```
 
 2. Verify the installation by running:
 
   ```none
-  docker run --rm gcr.io/google.com/cloudsdktool/google-cloud-cli:489.0.0-stable gcloud version
+  docker run --rm gcr.io/google.com/cloudsdktool/google-cloud-cli:566.0.0-stable gcloud version
   ```
 
   If you have used the floating `:stable` tag (which always point to the latest
