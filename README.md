@@ -18,7 +18,7 @@ your image:
 * `:stable`, `:VERSION-stable`: Provides a gcloud installation
 with `bq` components. The image is built upon the latest
 [Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 12 base image. This image supports both `linux/amd` and `linux/arm`
+Debian 13 base image. This image supports both `linux/amd` and `linux/arm`
 platforms. To install specific gcloud versions, use
 the `:VERSION-stable` tag.
 
@@ -26,7 +26,7 @@ If you want to use an Alpine-based image, you can install the following
 image:
 
 * `:alpine`, `:VERSION-alpine`: Similar to stable but built upon the latest
-[Alpine 3.20](https://github.com/alpinelinux/docker-alpine/tree/v3.20)
+[Alpine 3.23](https://github.com/alpinelinux/docker-alpine/tree/v3.23)
 base image. This image supports both `linux/amd` and `linux/arm` platforms. To
 install specific gcloud versions, use the `:VERSION-alpine` tag.
 
@@ -37,7 +37,7 @@ you can install one of the following options:
 * `:emulators`, `:VERSION-emulators`: Similar to stable, with the
 addition of all the emulator components. The image is build upon the latest
 [Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 12 base image and uses component manager to install the components. This
+Debian 13 base image and uses component manager to install the components. This
 image supports both `linux/amd` and `linux/arm` platforms. To install specific
 gcloud versions, use the `:VERSION-emulators`
 tag.
@@ -47,7 +47,7 @@ tag.
 [below](#components_installed_in_each_tag)) pre-installed. The image is build
 upon the latest
 [Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 12 base image and uses deb packages to install the components. This image supports both `linux/amd` and `linux/arm` platforms.
+Debian 13 base image and uses deb packages to install the components. This image supports both `linux/amd` and `linux/arm` platforms.
 To install specific gcloud versions, use the `:VERSION` tag.
 
 * `:slim`, `:VERSION-slim`: Similar to stable but includes the additional
@@ -55,7 +55,7 @@ third party packages like `curl`, `python3-crcmod`, `apt-transport-https`,
 `lsb-release`, `openssh-client`, `git`, `make`, and `gnupg`. This image is
 built upon the latest
 [Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 12 base image. This image supports both `linux/amd` and `linux/arm`
+Debian 13 base image. This image supports both `linux/amd` and `linux/arm`
 platforms. To install specific gcloud versions, use
 the `:VERSION-slim` tag.
 
@@ -65,7 +65,7 @@ stable, with additional components
 [below](#components_installed_in_each_tag)) pre-installed. The image is build
 upon the latest
 [Google-Provided](/software-supply-chain-security/docs/base-images#google-provided_base_images)
-Debian 12 base image and uses component manager to install the components. This
+Debian 13 base image and uses component manager to install the components. This
 image supports both `linux/amd` and `linux/arm` platforms. To install specific
 gcloud versions, use the `:VERSION-debian_component_based` tag.
 
